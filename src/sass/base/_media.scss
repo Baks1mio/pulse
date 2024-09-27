@@ -13,6 +13,14 @@
         }
     }
 
+    .catalog {
+
+        &__tab {
+            width: 160px;
+            font-size: 14px;
+        }
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -76,12 +84,26 @@
         }
     }
 
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+
+        &__tab:nth-child(n+2) {
+            margin-top: 20px;
+        }
+    }
+
 }
 
 @media (max-width: 425px) {
     .header {
         &__logo {
             width: 150px;
+        }
+
+        &__phone {
+            font-size: 12px;
         }
     }
 
@@ -106,9 +128,15 @@
         }
     }
 
-    .header {
-        &__phone {
-            font-size: 12px;
+
+    .reviews {
+        &__item {
+            flex-direction: column;
+
+        }
+
+        &__descr {
+            margin-top: 20px;
         }
     }
 }
